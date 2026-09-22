@@ -1,2 +1,2 @@
 # Study-App
-a mini study app that's mainly copied from YPT, just a basic pproject to help me learn javascript
+a mini study app that's based on YPT, just a basic project to learn javascript
