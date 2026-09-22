@@ -1,0 +1,252 @@
+body {
+    font-family: 'Comfortaa', Arial, sans-serif;
+    margin: 0;
+    background: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+#calendar_screen {
+    padding-top: 30px;
+    width: 750px;
+    max-width: 800px;
+}
+
+.calendar_container {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adds a soft shadow */
+}
+
+.days_of_week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-bottom: 20px;
+    background-color: #f4ffea;
+    width: 100%;
+}
+
+.days_of_week>div {
+    background: #f0f0f0;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+}
+
+.calendar_day {
+    background: #e8f7d4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.calendar_day:hover {
+    transform: scale(1.05);
+    background-color: #d6f0b6;
+}
+
+.today {
+    font-weight: bold;
+    border: 2px solid #ff9900;
+}
+
+.calendar>.past_filler,
+.calendar>.next_filler {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.past_filler {
+    border: 1.5px dashed #aaa;
+    background-color: #fff6ae;
+    color: #000;
+}
+
+.next_filler {
+    border: 1.5px dashed #ccc;
+    background-color: #fff28d;
+    color: #000;
+}
+
+.month_nav {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.next,
+.last {
+    padding: 6px 16px;
+    font-family: inherit;
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: #3500f3;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.next:hover,
+.last:hover {
+    background-color: #2200a8;
+    transform: scale(0.97);
+}
+
+.hidden {
+    display: none;
+}
+
+li {
+    background: #fdfdfd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.subj_name {
+    font-weight: 600;
+    color: #333;
+}
+
+.subj_time {
+    margin-left: auto;
+    font-family: monospace;
+    color: #555;
+}
+
+.select {
+    background: #85f387;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.select:hover {
+    background: #a5f4a9;
+    transform: scale(0.95);
+}
+
+#create {
+    background-color: #aaa;
+}
+
+.subj_time {
+    margin-left: auto;
+}
+
+.kebab_button {
+    background-color: #ffffff;
+    border-width: 0px;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.3s ease
+}
+
+.kebab_button:hover {
+    background-color: #cecece;
+}
+
+.kebab_menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: white;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.delete_button {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+}
+
+.delete_button:hover {
+    background-color: #f0f0f0;
+}
+
+#switch_screen {
+    padding: 6px 16px;
+    font-family: inherit;
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: #3500f3;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#switch_screen:hover {
+    background-color: #2200a8;
+    transform: scale(0.97);
+}
+
+.level1 {
+    background: #e0fcbc;
+}
+
+.level2 {
+    background: #c7ff7d;
+}
+
+.level3 {
+    background: #a7f146;
+}
+
+.level4 {
+    background: #81dc0b;
+}
+
+dialog {
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}

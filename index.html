@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>OmniStudy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><strong>OmniStudy</strong></h1>
+    </header>
+
+    <main>
+        <dialog id = "popup_background"> 
+            <p>no data logged for this day!</p>
+            <button type = "button" id = "close_popup">close</button>
+        </dialog>
+        <div id="calendar_screen">
+            <div class="month_nav">
+                <label id="date">date</label>
+                <button type="button" id='last' class="last">last month</button>
+                <button type="button" id='next' class="next">next month</button>
+                <input type = "text" id = 'date_input' class = "date_input" placeholder="enter date: e.g.1-2026">
+            </div>
+            <div class="calendar_container" id="calendar_container">
+
+                <div class="days_of_week" id="days">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thur</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+
+                <div class="calendar" id="calendar">
+                </div>
+
+            </div>
+        </div>
+
+        <ul id="subject_choose_screen">
+            <li>
+                <button type="button" id="select_subject" class="select">&#9658;</button>
+                <div id="subj_name" class="subj_name">coding</div>
+                <div id="subj_time" class="subj_time">0:00:00</div>
+                <button type = "button">&#8942;</button>
+            </li>
+            <li>
+                <button type="button" id="create" class="select">+</button>
+                <div>create new subject</div>
+            </li>
+        </ul>
+        
+        <canvas id = "chart" width = 500 height = 300>
+        </canvas>
+        
+    </main>
+
+    <footer>
+        <button type = "button" id = "switch_screen">switch screen</button>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
